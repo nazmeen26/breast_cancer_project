@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Breast Cancer Prediction</h1>
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+      <input type="text" name="AgeatDiagnosis" placeholder="AgeatDiagnosis" required="required" /><br>
+        <input type="text" name="TypeofBreastSurgery" placeholder="TypeofBreastSurgery" required="required" /><br>
+        <input type="text" name="CancerType" placeholder="CancerType" required="required" /><br>
+        <input type="text" name="Cellularity" placeholder="Cellularity" required="required" /><br>
+        <input type="text" name="Chemotherapy" placeholder="Chemotherapy" required="required" /><br>
+        <input type="text" name="Cohort" placeholder="Cohort" required="required" /><br>
+        <input type="text" name="ERstatusmeasuredbyIHC" placeholder="ERstatusmeasuredbyIHC" required="required" /><br>
+        <input type="text" name="ERStatus" placeholder="ERStatus" required="required" /><br>
+        <input type="text" name="NeoplasmHistologicGrade" placeholder="NeoplasmHistologicGrade" required="required" /><br>
+        <input type="text" name="HER2statusmeasuredbySNP6" placeholder="HER2statusmeasuredbySNP6" required="required" /><br>
+        <input type="text" name="HER2Status" placeholder="HER2Status" required="required" /><br>
+        <input type="text" name="HormoneTherapy" placeholder="HormoneTherapy" required="required" /><br>
+        <input type="text" name="InferredMenopausalState" placeholder="InferredMenopausalState" required="required" /><br>
+        <input type="text" name="PrimaryTumorLaterality" placeholder="PrimaryTumorLaterality" required="required" /><br>
+        <input type="text" name="Lymphnodesexaminedpositive" placeholder="Lymphnodesexaminedpositive" required="required" /><br>
+        <input type="text" name="MutationCount" placeholder="MutationCount" required="required" /><br>
+        <input type="text" name="Nottinghamprognosticindex" placeholder="Nottinghamprognosticindex" required="required" /><br>
+        <input type="text" name="OverallSurvival_Months" placeholder="OverallSurvival_Months" required="required" /><br>
+        <input type="text" name="PRStatus" placeholder="PRStatus" required="required" /><br>
+        <input type="text" name="RadioTherapy" placeholder="RadioTherapy" required="required" /><br>
+        <input type="text" name="RelapseFreeStatus_Months" placeholder="RelapseFreeStatus_Months" required="required" /><br>
+        <input type="text" name="RelapseFreeStatus" placeholder="RelapseFreeStatus" required="required" /><br>
+        <input type="text" name="Geneclassifiersubtype" placeholder="Geneclassifiersubtype" required="required" /><br>
+        <input type="text" name="TumorSize" placeholder="TumorSize" required="required" /><br>
+        <input type="text" name="TumorStage" placeholder="TumorStage" required="required" /><br>
+        <input type="text" name="PatientsVitalStatus" placeholder="PatientsVitalStatus" required="required" /><br>
+        <input type="text" name="Cancer_Type_Detailed" placeholder="Cancer_Type_Detailed" required="required" /><br>
+        <input type="text" name="CPam50low_subtype" placeholder="CPam50low_subtype" required="required" /><br>
+        <input type="text" name="Tumor_Other_Histologic_Subtype" placeholder="Tumor_Other_Histologic_Subtype" required="required" /><br>
+        <input type="text" name="Integrative_Cluster" placeholder="Integrative_Cluster" required="required" /><br>
+        <input type="text" name="Oncotree_Code" placeholder="Oncotree_Code" required="required" /><br>
+           
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+<body>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{result}}
+
+</body>
+</html>   
+
+   
+   
